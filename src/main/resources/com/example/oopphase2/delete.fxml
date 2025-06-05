@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="666.0" prefWidth="1285.0" style="-fx-background-color: #062f55;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopphase2.DeleteController">
+   <children>
+      <ImageView fitHeight="167.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="delete" layoutX="905.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="80.0" prefWidth="175.0" style="-fx-background-radius: 16;" styleClass="addProductbutton" text="Delete" textFill="#fcf4f4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="deleteTextField" layoutX="561.0" layoutY="293.0" prefHeight="50.0" prefWidth="202.0" style="-fx-background-radius: 16px; -fx-background-color: b3daff;" />
+      <Label layoutX="522.0" layoutY="301.0" prefHeight="33.0" prefWidth="39.0" text="ID:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font></Label>
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="503.0" layoutY="373.0" prefHeight="50.0" prefWidth="317.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="50.0" fitWidth="63.0" layoutX="1152.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Backbutton" layoutX="1202.0" layoutY="23.0" mnemonicParsing="false" onAction="#backToAdmin" styleClass="backbutton" text="Back" />
+      <Label fx:id="cp" layoutX="574.0" layoutY="149.0" prefHeight="17.0" prefWidth="175.0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

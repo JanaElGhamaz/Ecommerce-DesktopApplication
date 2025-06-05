@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="726.0" prefWidth="1285.0" style="-fx-background-color: #b3daff;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopphase2.PlaceOrderController">
+    <children>
+        <Label layoutY="20.0" prefHeight="0.0" prefWidth="281.0" style="-fx-font-size: 14px;" textFill="red" visible="false" />
+      <Rectangle arcHeight="16.0" arcWidth="5.0" fill="#062f55" height="163.0" layoutX="543.0" layoutY="80.0" stroke="#062f55" strokeType="INSIDE" width="200.0" />
+        <GridPane layoutX="459.0" layoutY="186.0" prefHeight="353.0" prefWidth="368.0" style="-fx-background-color: #062f55; -fx-background-radius: 16px;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="92.66668701171875" minWidth="10.0" prefWidth="49.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="257.6666717529297" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="90.3333740234375" minWidth="10.0" prefWidth="42.66664632161459" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="29.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="44.66666158040364" minHeight="0.0" prefHeight="40.666676839192704" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="47.66668701171874" minHeight="10.0" prefHeight="36.666656494140625" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="32.66666666666667" minHeight="9.666656494140625" prefHeight="19.33331298828125" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="54.0" minHeight="0.0" prefHeight="25.999999999999986" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="30.33331298828125" minHeight="0.0" prefHeight="14.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" /> <!-- New row for total label -->
+            </rowConstraints>
+            <children>
+                <Button fx:id="confirmPaymentButton" onAction="#confirmPayment" prefHeight="39.0" prefWidth="255.0" styleClass="confirmpayementbutton" text="Confirm Payment" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <TextField fx:id="addressField" prefHeight="31.0" prefWidth="264.0" promptText="Enter shipping address" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <CheckBox fx:id="cashPaymentCheckBox" prefHeight="45.0" prefWidth="253.0" style="-fx-background-color: #062f55; -fx-text-fill: white;" text="Cash Payment" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="5.0" />
+                    </font>
+                </CheckBox>
+                <CheckBox fx:id="cardPaymentCheckBox" prefHeight="45.0" prefWidth="253.0" style="-fx-background-color: #062f55; -fx-text-fill: white;" text="Card Payment" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="cardNumberField" prefWidth="300" promptText="Card Number" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="cardExpiryField" prefWidth="300" promptText="Card Expiry Date" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <TextField fx:id="cardCvvField" prefWidth="300" promptText="Card CVV" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label alignment="CENTER" prefHeight="20.0" prefWidth="210.0" text="Please choose a payment method" textAlignment="CENTER" textFill="#fffcfc" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorLabel" prefHeight="17.0" prefWidth="274.0" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Label fx:id="totalLabel" alignment="CENTER" prefHeight="30.0" prefWidth="252.0" text="Total: $0.00" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font></Label>
+            <TextField fx:id="name" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="53.0" text="Address:" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="57.0" text="Name:" textAlignment="RIGHT" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </GridPane>
+          <Button fx:id="returnToCartButton" layoutX="26.0" layoutY="23.0" onAction="#goBackToCart" prefHeight="33.0" prefWidth="143.0" styleClass="returntocartbutton" text="Back to Cart" />
+      <ImageView fitHeight="81.0" fitWidth="76.0" layoutX="753.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Payement.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="187.0" fitWidth="265.0" layoutX="512.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

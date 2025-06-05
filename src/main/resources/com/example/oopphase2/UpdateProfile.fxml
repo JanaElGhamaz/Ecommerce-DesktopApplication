@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="804.0" prefWidth="1306.0" style="-fx-background-color: b3daff;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopphase2.UpdateProfileController">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="20.0" fill="#062f55" height="73.0" layoutY="-5.0" stroke="#062f55" strokeType="INSIDE" width="1306.0" />
+      <ImageView fitHeight="73.0" fitWidth="101.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="1170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="532.0" layoutY="273.0" prefHeight="32.0" prefWidth="63.0" text="Username">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="324.0" prefHeight="32.0" prefWidth="63.0" text="Password">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="371.0" prefHeight="32.0" prefWidth="81.0" text="Date of Birth">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="415.0" prefHeight="32.0" prefWidth="63.0" text="Balance">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="459.0" prefHeight="32.0" prefWidth="63.0" text="Address">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="499.0" prefHeight="32.0" prefWidth="63.0" text="Gender">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="532.0" layoutY="545.0" prefHeight="32.0" prefWidth="63.0" text="Interests">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="gender" layoutX="623.0" layoutY="502.0" prefWidth="150.0" promptText="Gender" />
+      <TextField fx:id="username" alignment="CENTER" layoutX="624.0" layoutY="276.0" promptText="Username" />
+      <TextField fx:id="password" alignment="CENTER" layoutX="624.0" layoutY="325.0" promptText="Password" />
+      <TextField fx:id="DOB" alignment="CENTER" layoutX="623.0" layoutY="374.0" promptText="DOB" />
+      <TextField fx:id="balance" alignment="CENTER" layoutX="624.0" layoutY="418.0" promptText="Balance" />
+      <TextField fx:id="address" alignment="CENTER" layoutX="623.0" layoutY="462.0" promptText="Address" />
+      <TextField fx:id="interests" alignment="CENTER" layoutX="623.0" layoutY="548.0" promptText="Interests" />
+      <Button fx:id="updateButton" layoutX="610.0" layoutY="586.0" onMouseClicked="#Update" styleClass="placeorderbutton" text="Update" />
+      <Button fx:id="backbutton" layoutX="1211.0" layoutY="17.0" onMouseClicked="#back" styleClass="backbutton" text="Back" />
+
+      <Label layoutX="578.0" layoutY="224.0" prefHeight="38.0" prefWidth="150.0" styleClass="totalprice" text="Updated Info" />
+      <ImageView fitHeight="119.0" fitWidth="117.0" layoutX="593.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@profile2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="550.0" layoutY="256.0" text="Leave empty if you don't want to update" textFill="#062f55">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

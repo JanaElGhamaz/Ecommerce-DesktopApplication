@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="718.0" prefWidth="1274.0" style="-fx-background-color: #062f55;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopphase2.CreateController">
+    <children>
+        <ImageView fitHeight="149.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo2.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="submit" layoutX="956.0" layoutY="492.0" mnemonicParsing="false" onMouseClicked="#submit" prefHeight="95.0" prefWidth="210.0" style="-fx-background-radius: 16;" styleClass="addProductbutton" text="Submit" textFill="#f2eded">
+            <font>
+                <Font name="Berlin Sans FB" size="14.0" />
+            </font></Button>
+        <Label fx:id="label" layoutX="385.0" layoutY="519.0" prefHeight="34.0" prefWidth="364.0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Label>
+        <ImageView fitHeight="52.0" fitWidth="45.0" layoutX="1113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Back.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="Backbutton" layoutX="1166.0" layoutY="19.0" mnemonicParsing="false" onAction="#backToAdmin" prefHeight="34.0" prefWidth="92.0" styleClass="backbutton" text="Back" />
+      <Label fx:id="cp" layoutX="454.0" layoutY="59.0" prefHeight="33.0" prefWidth="226.0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

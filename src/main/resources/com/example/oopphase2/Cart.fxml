@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="672.0" prefWidth="1295.0" style="-fx-background-color: #b3daff;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopphase2.CartController">
+    <children>
+        <Rectangle arcHeight="10.0" arcWidth="20.0" fill="#062f55" height="90.0" layoutY="-4.0" stroke="#062f55" strokeType="INSIDE" width="1295.0" />
+        <Button layoutX="868.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#Orders" prefHeight="25.0" prefWidth="80.0" styleClass="orderbutton" text="Orders" textFill="WHITE">
+            <font>
+                <Font name="Berlin Sans FB" size="12.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="81.0" fitWidth="110.0" layoutX="1.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="57.0" fitWidth="80.0" layoutX="1180.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@profile.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="813.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@reciept.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="325.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@home.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="Homebutton" layoutX="382.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="27.0" prefWidth="80.0" styleClass="homebutton" text="Home" />
+        <TableView fx:id="cartTable" layoutY="85.0" prefHeight="521.0" prefWidth="1295.0" style="-fx-background-color: #b3daff;">
+            <columns>
+                <TableColumn fx:id="imageColumn" prefWidth="240.66669464111328" />
+                <TableColumn fx:id="idColumn" minWidth="0.0" prefWidth="84.6666589975357" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="173.33331298828125" text="Name" />
+                <TableColumn fx:id="priceColumn" prefWidth="186.66668701171875" text="Price" />
+                <TableColumn fx:id="quantityColumn" prefWidth="208.0" text="Quantity" />
+                <TableColumn fx:id="updateQuantityColumn" prefWidth="195.3333740234375" text="Update Quantity " />
+                <TableColumn fx:id="removeColumn" prefWidth="209.3333740234375" />
+            </columns>
+        </TableView>
+        <Label fx:id="totalPriceLabel" layoutX="731.0" layoutY="609.0" prefHeight="39.0" prefWidth="276.0" styleClass="totalprice" text="Total Price:">
+
+        </Label>
+        <Button fx:id="Placeorder" layoutX="1009.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#placeOrder" prefHeight="25.0" prefWidth="228.0" styleClass="placeorderbutton" text="Place Order" />
+      <Button fx:id="profile" layoutX="1100.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#Profile" prefHeight="25.0" prefWidth="80.0" styleClass="cartbutton" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="239.0" layoutY="621.0" prefHeight="21.0" prefWidth="389.0" textFill="#062f55">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>

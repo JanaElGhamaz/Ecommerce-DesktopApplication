@@ -1,0 +1,206 @@
+
+/* Button Styles */
+.exitbutton {
+    -fx-background-color: #062f55;
+}
+
+.exitbutton:hover {
+    -fx-background-color: #005BB5;
+}
+
+.loginbutton {
+    -fx-background-color: #005cb3;
+}
+
+.loginbutton:hover {
+    -fx-background-color: #2d649c;
+}
+
+.signupbutton {
+    -fx-background-color: #ff6666;
+}
+
+.signupbutton:hover {
+    -fx-background-color: #f59a9a;
+}
+
+.addProductbutton {
+    -fx-background-color: #005cb3;
+
+    -fx-text-fill: #fcfcfc;
+    -fx-font-size: 20px;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+.addProductbutton:hover {
+    -fx-background-color: #2d649c;
+}
+
+.cartbutton, .orderbutton, .homebutton, .profilebutton,.backbutton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fcfcfc;
+    -fx-font-size: 20px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+.backtologinbutton, .returntocartbutton{
+    -fx-background-color:#062f55 ;
+    -fx-text-fill: #fcfcfc;
+    -fx-font-size: 20px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+.cartbutton:hover, .orderbutton:hover, .homebutton:hover, .profilebutton:hover,
+.returntocartbutton:hover, .backtologinbutton:hover, .backbutton:hover {
+    -fx-background-color: rgba(0, 110, 255, 0.2);
+}
+
+.placeorderbutton {
+    -fx-background-color: #062f55;
+    -fx-text-fill: #fcfcfc;
+    -fx-font-size: 20px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+
+.placeorderbutton:hover {
+    -fx-background-color: rgba(0, 110, 255, 0.2);
+}
+
+.totalprice {
+    -fx-text-fill: #1d1646;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+.welcome {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Table Styles */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1d1646;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.table-view .column-header {
+    -fx-background-color: #b3daff;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial", sans-serif;
+}
+
+.table-column {
+    -fx-padding: 5px;
+    -fx-alignment: CENTER;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-border-color: transparent;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #b3daff;
+}
+
+.table-view .table-cell .button {
+    -fx-background-color: #062f55;
+    -fx-text-fill: rgb(194, 194, 194);
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+.table-view .table-cell .button:hover {
+    -fx-background-color: rgba(0, 22, 148, 0.406);
+}
+
+/* Checkbox Styles */
+.check-box {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+.check-box:selected {
+    -fx-text-fill: #080c41;
+}
+
+.check-box .check-mark {
+    -fx-fill: #062f55;
+}
+
+.check-box:hover {
+    -fx-background-color: #e1f7d5;
+    -fx-border-color: #829bff;
+}
+
+.check-box:focused {
+    -fx-border-color: #0007528b;
+    -fx-background-color: #e1f7d5;
+}
+
+/* Payment Button */
+.confirmpayementbutton {
+    -fx-background-color: #85a2bd;
+    -fx-text-fill: #fcfcfc;
+    -fx-font-size: 20px;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 10px;
+}
+
+.confirmpayementbutton:hover {
+    -fx-background-color: rgba(183, 214, 255, 0.735);
+}
+
+/* Anchor Pane */
+.anchor-pane {
+    -fx-padding: 20px;
+}
+
+.anchor-pane > * {
+    -fx-spacing: 20px;
+}
+
+/* List View Styles */
+.list-view .list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.619);
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #829bff;
+}
+.profile-label {
+    -fx-font-size: 17px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+    -fx-font-family: "Berlin Sans FB";
+
+}
